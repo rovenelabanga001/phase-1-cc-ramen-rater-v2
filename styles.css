@@ -23,6 +23,7 @@ header {
 
 #ramen-menu {
   display: flex;
+  flex-wrap: wrap;
   overflow-x: auto;
   margin: 1rem 0;
   max-width: calc(100vw - 2rem);
@@ -41,12 +42,20 @@ header {
 
 #ramen-detail {
   position: relative;
+  margin-top: 30px;
 }
 
 .detail-image {
   height: 350px;
 }
-
+#remove-ramen-btn button {
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: rgba(224, 226, 228, 0.938);
+  cursor: pointer;
+  color: red;
+}
 .name,
 .restaurant {
   position: absolute;
@@ -99,4 +108,7 @@ form h4 {
   margin: 0.5rem 0;
   color: white;
   background-color: black;
+}
+.hidden {
+  display: none;
 }
